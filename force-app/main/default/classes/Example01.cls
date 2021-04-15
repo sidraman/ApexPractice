@@ -1,6 +1,12 @@
 public inherited sharing class Example01 {
-    public Example01() {
-
-System.debug('this is to commint');
+    public static Map addd() {
+        Map<Id,String> accountMap = new Map<Id,String>();
+        accountMap = [select Id,name from Account];
+        System.debug('this is to commint');
+        return accountMap;
     }
-}
+
+      
+  }
+    
+
