@@ -10,7 +10,7 @@ public with sharing class ClassExample01 {
       //  insert actList;
      List<Database.SaveResult> accounts =   Database.insert(actList, true);
         for (Database.SaveResult a : accounts) {
-            System.debug('Inserted: '+a)
+            System.debug('Inserted: '+a);
         }
     
 
