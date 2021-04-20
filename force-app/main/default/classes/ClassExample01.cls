@@ -7,7 +7,12 @@ public with sharing class ClassExample01 {
             act.Name='name'+i;
             actList.add(act);
         }
-        insert actList;
+      //  insert actList;
+     List<Database.SaveResult> accounts =   Database.insert(actList, true);
+        for (Database.SaveResult a : accounts) {
+            System.debug('Inserted: '+a)
+        }
+    
 
     }
 
