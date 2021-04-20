@@ -12,7 +12,7 @@ public with sharing class ClassExample01 {
     }
 
     public static void displayAccountsCreated(){
-        List<Account> allAccounts = [SELECT Id FROM Account 
+        List<Account> allAccounts = [SELECT Id,Name FROM Account 
                                     WHERE name LIKE 'name%'];
 
         if(allAccounts.size()>0){
